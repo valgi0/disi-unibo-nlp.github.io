@@ -32,9 +32,9 @@
 <meta property="og:site_name" content="DISI UniBo NLP" />
 <meta property="og:image" content="https://i.ibb.co/KXL00m6/full-architecture-w-img.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-07-07T16:50:07+00:00" />
+<meta property="article:published_time" content="2022-07-11T12:55:56+00:00" />
 <script type="application/ld+json">
-{"description":"Fashion Retrieval","headline":"Fashion Retrieval","dateModified":"2022-07-07T16:50:07+00:00","datePublished":"2022-07-07T16:50:07+00:00","url":"/projects/fashion_retrieval/","@type":"BlogPosting","image":"https://i.ibb.co/KXL00m6/full-architecture-w-img.png","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/fashion_retrieval/"},"@context":"https://schema.org"}</script>
+{"description":"Fashion Retrieval","headline":"Fashion Retrieval","dateModified":"2022-07-11T12:55:56+00:00","datePublished":"2022-07-11T12:55:56+00:00","url":"/projects/fashion_retrieval/","@type":"BlogPosting","image":"https://i.ibb.co/KXL00m6/full-architecture-w-img.png","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/fashion_retrieval/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts --></head>
@@ -85,7 +85,7 @@
     <div class="hero-body ">
         <div class="container">
             <h1 class="title is-2">Fashion Retrieval</h1>
-            <p class="subtitle is-3">Cross-Modal Retrieval in Fashion Domain</p>
+            <p class="subtitle is-3">Multi-Modal Retrieval in Fashion Domain</p>
             
         </div>
     </div>
@@ -113,8 +113,8 @@
 
     <div class="column is-6">
         <p class="title is-3">Fashion Retrieval</p>
-        <p class="subtitle is-3">Cross-Modal Retrieval in Fashion Domain</p>
-        <p class="subtitle is-4 is-italic">Gianluca Moro, Stefano Salvatori</p>
+        <p class="subtitle is-3">Multi-Modal Retrieval in Fashion Domain</p>
+        <p class="subtitle is-4 is-italic">Gianluca Moro, Stefano Salvatori, Giacomo Frisoni</p>
         
         
        
@@ -127,11 +127,9 @@
         <div class="content">
             
     
-            <p>SOTA solutions proposed in literature for fashion cross-modal retrieval use vision-and-language transformers to assign a similarity score to text-image pairs. This approach is inefficient since it requires coupling a query with every record in the dataset and computing a forward pass for each sample at runtime, precluding scalability to large-scale datasets.
-We thus propose a solution that overcomes the above limitation by combining transformers and deep metric learning to create a latent space where text and images are separately embedded and their spatial proximity translates into semantic similarity.
-We improve state-of-the-art results on the benchmark dataset FashionGen, also showing that, unlike existing solutions, ours enables the adoption of multi-dimensional indices, with which cross-modal retrieval scales in logarithmic time up to millions, and potentially billions, of texts and images.</p>
+            <p>State-of-the-art (SOTA) works proposed in literature use vision-and-language transformers to assign similarity scores to joint text-image pairs, then used for sorting the results during a retrieval phase. However, this approach is inefficient since it requires coupling a query with every record in the dataset and computing a forward pass for each sample at runtime, precluding scalability to large-scale datasets. We thus propose a solution that overcomes the above limitation by combining transformers and deep metric learning to create a latent space where text and images are separately embedded and their spatial proximity translates into semantic similarity. Our architecture does not use any convolutional neural networks to process images, allowing us to test different levels of image-processing details, together with multiple metric learning losses. We improve retrieval accuracy results (+18.71% and +9.22% Rank@1 on image- to-text and text-to-image, respectively) on the FashionGen benchmark dataset while being up to 512x faster. Finally, we analyze the speed-up obtainable by different approximate nearest neighbor retrieval strategies — an optimization precluded to current SOTA contributions.</p>
 
-<p>Keywords: cross-modal retrieval; deep metric learning; vision-and-language transformers; fashion domain</p>
+<p>Keywords: multi-modal retrieval; deep metric learning; vision-and-language transformers; fashion domain</p>
 
         </div>
         
